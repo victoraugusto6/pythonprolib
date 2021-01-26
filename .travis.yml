@@ -1,0 +1,8 @@
+language: python
+python:
+  - 3.9.1
+install:
+  - pip install -q -r requirements-dev.txt
+script:
+  - flake8
+  - pytest libpythonpro
