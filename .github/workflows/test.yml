@@ -1,0 +1,35 @@
+name: Python application
+
+on: [ pull_request ]
+
+jobs:
+  build:
+    env:
+      PIPENV_NO_INHERIT: 1
+      PIPENV_IGNORE_VIRTUALENVS: 1
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Copying configurations
+        run: |
+          cp contrib/env-sample .env
+      - name: Install dependencies
+        run: |
+          pip install pipenv
+          pipenv sync --dev
+      - name: Lint with flake8
+        run: |
+          pipenv run flake8 .
+      - name: Test with pytest
+        run: |
+          pipenv run pytest pythonpro --cov=pythonpro
+      - name: Posting Coverage
+        env:
+          CODECOV_TOKEN: "b4b5ed36-17c5-42b6-b741-efb81b8a018d"
+        run: |
+          pipenv run codecov
