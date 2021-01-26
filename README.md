@@ -8,6 +8,7 @@ Link para o curso [PyTools](https://www.python.pro.br/modulos/descricao/pytools/
 
 [![Build Status](https://travis-ci.org/victoraugusto6/libpythonpro.svg?branch=main)](https://travis-ci.org/victoraugusto6/libpythonpro)
 [![Updates](https://pyup.io/repos/github/victoraugusto6/libpythonpro/shield.svg)](https://pyup.io/repos/github/victoraugusto6/libpythonpro/)
+[![codecov](https://codecov.io/gh/victoraugusto6/libpythonpro/branch/master/graph/badge.svg?token=6RYL4CE8PK)](https://codecov.io/gh/victoraugusto6/libpythonpro)
 
 Suportada versão 3 de Python
 
