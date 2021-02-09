@@ -11,5 +11,6 @@ pyflakes==2.2.0
 pyparsing==2.4.7
 pytest==6.2.2
 pytest-cov==2.11.1
+pytest-mock==3.5.1
 toml==0.10.2
 -r requirements.txt
