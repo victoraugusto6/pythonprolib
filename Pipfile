@@ -12,6 +12,7 @@ pytest = "*"
 coverage = "*"
 pytest-cov = "*"
 pytest-mock = "*"
+codecov = "*"
 
 [requires]
 python_version = "3.9"
